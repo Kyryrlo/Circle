@@ -1,8 +1,8 @@
-from math import*
+﻿from math import*
 
 from random import*
 
-# # #10 Exercice
+# # #10 Exercices
 
 # #1
 # t = 0
@@ -21,15 +21,70 @@ from random import*
 #     print("Summa: {0}".format(summa))
 
 
-# 3
-p=1
-Lause=""
-for x in range(8):
-    A=float(input("{0}. samm\nInput A: ".format(x+1)))
-    if A>0:
-        p=A
-        Lause = Lause + str(p) + "*"
-print(Lause[:-1],"=",p,end="")
+# # 3
+# p = 1
+# Lause = ""
+# for x in range(8):
+#     A = float(input("{0}. Шаг\nВведите число: ".format(x + 1)))
+#     if A > 0:
+#         p *= A
+#         Lause += str(int(A)) + "*"
+
+# print(Lause[:-1], "=", int(p))
+
+
+#4
+# x = 10
+# for x in range(10,21):
+#     summ = x * x
+#     print(summ)
+
+# # 5 
+# while 0 == 0:
+#     try:
+#         start = int(input("С какого числа начнём складывать?: "))
+#         break
+#     except ValueError:
+#         pass
+# while 0 == 0:
+#     try:
+#         finish = int(input("До какого числа будем складывать?: "))
+#         break
+#     except ValueError:
+#         pass
+
+# start1 = start    
+# summ = 0
+# for start in range(start, finish + 1):
+#     if start < 0:
+#         summ += start
+
+# print("Сумма всех отрицательных чисел от", str(start1), "до", str(finish), "равна:", str(summ))
+    
+
+#6
+# Neg = ""
+# Nuli = ""
+# Poz = ""
+# Q = int(input("Сколько чисел введёте?: "))
+# if Q > 0:
+#     for Q in range(1,Q + 1):
+#         A = int(input("Введите число: "))
+#         if A < 0:
+#             Neg = Neg + str(A) + ","
+#         elif A == 0:
+#             Nuli = Nuli + str(A) + ","
+#         elif A > 0:
+#             Poz = Poz + str(A) + ","
+#         else:
+#             print("Это не число")
+#     print("Отрицательных:",str(Neg[:-1])) 
+#     print("Нулей:",str(Nuli[:-1])), 
+#     print("Положительных:", str(Poz[:-1]))
+# else:
+#     print("Нельзя ввести количество чисел меньше нуля")
+
+
 
 
 # #12
@@ -37,26 +92,45 @@ print(Lause[:-1],"=",p,end="")
 # m = randint(1,10)
 # summa = 0
 # print("Chislo kosilok: ", n)
-# print("Chislo kosilok: ", m)
+# print("Первая проработала: ", m, "часа")
 # for t in range(n - 1):
 #     m = (m/6) * 7
 #     summa += m
-#     print(m)
 # print("Kokku misinad tootasid", summa, "tn")
 
 
+# #13
+# Q = 0
+# Summ = 0
+# for x in range(100, 1001):
+#     if x % 7 == 0:
+#         Q +=1
+#         Summ += x
+# print("Количество чисел кратных 7: " + str(Q)) 
+# print("Cумма чисел кратных 7: " + str(Summ))
 
 
+# #14
+# P = 1
+# N = int(input("Введите число произведения от 1 до него хотите найти :"))
+# for N in range(1, N+1):
+#     P *= N
+# print("Произведение от 1 до введёного вами числа =", P)
 
 
-
-
-# #15
-# for y in range(10):
-#     for x in range(10):
-#         print(x,end="")
-#     print()
+#15
+for x in range(10):
+    for y in range(10):
+        print(y, end="")
+    print()
     
+for x in range(1, 10):
+    for y in range(1, 10):
+        if y == x:
+            print(y, end="")
+        else:
+            print(0, end="")
+    print()
 
 # #29
 # for i in range(9):
@@ -66,58 +140,3 @@ print(Lause[:-1],"=",p,end="")
 #         else:
 #             print("0",end="")
 #     print() 
-
-
-
-
-
-
-
-
-# for x in range(10):
-#     R=float(input("{0} R: ").format(x+1))
-#     if R>0:
-#         S=pi*R**2
-#     else:
-#         S="R peab> kui 0 olema"
-#     print("S={0}".format(S))
-    
-
-# x=0
-
-# while True:
-#     x+=1
-#     R=float(input("{0} R: ").format(x+1))
-#     if R>0:
-#         S=pi*R**2
-#     else:
-#         S="R peab> kui 0 olema"
-#     print("S={0}".format(S))
-#     if x==10:
-#         break
-    
-
-# #10 R
-# x=0
-# while x<10:
-#     x+=1
-#     R=float(input("{0} R: ").format(x+1))
-#     if R>0:
-#         S=pi*R**2
-#     else:
-#         S="R peab> kui 0 olema"
-#     print("S={0}".format(S))
-    
-
-# #10 
-# x=0
-# while x<10:
-#     R=float(input("{0} R: ").format(x+1))
-#     if R>0:
-#         S=pi*R**2
-#         x+=1
-#     else:
-#         S="R peab> kui 0 olema"
-#     print("S={0}".format(S))
-
-
